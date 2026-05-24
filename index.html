@@ -1,16 +1,94 @@
+index.html
+html
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ron & Brad’s Second Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Band - Live Entertainment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Welcome to Our Website</h1>
-
-<p>
-This is our first webpage.  
-We are learning how to build a website together.
-</p>
+    <header class="hero-banner">
+        <div class="hero-content">
+            <h1>LIVE MUSIC & FINE WINE</h1>
+            <h2>Premium Bands for Wineries, Galas & Private Events</h2>
+            <p>Elevate your atmosphere with exceptional musical talent curated perfectly for your venue.</p>
+            <a href="#booking" class="hero-btn">BOOK A BAND</a>
+        </div>
+    </header>
 
 </body>
 </html>
+Use code with caution.
+style.css
+css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #110305; /* Dark matching base */
+    color: #ffffff;
+}
+
+.hero-banner {
+    /* Points to your text-free image in the images folder */
+    background-image: linear-gradient(to right, rgba(17,3,5,0.85) 40%, rgba(17,3,5,0.2) 100%), url('images/wine-music-bg.jpg'); 
+    background-size: cover;
+    background-position: right center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10% 5%;
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    color: #f5e4c3; /* Elegant cream-gold */
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.hero-content h2 {
+    color: #d4a373; /* Warm accent gold */
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #e0d0cc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #5c1322; /* Deep burgundy button */
+    color: #ffffff;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #7a1c30; /* Brighter burgundy on hover */
+}
